@@ -10,8 +10,9 @@ import './App.css';
 function App() {
   return (
     <div className="App" style={{flex:1}}>
-      <div style={{flex:6}}> <img src={logo}/></div>
+      <div style={{flex:4}}> <img src={logo}/></div>
       <div style={{flex:6}} className="App-body">
+        <div style={{flex:1}}></div>
         <div style={{flex:2}}>
           <a href="https://github.com/SimonTakman/">
             <img src={github}/>
@@ -37,10 +38,11 @@ function App() {
             <img src={phone}/>
           </a>
         </div>
-        <div style={{flex:2}}>
-          <p className="footer">© 2019 Takman Technologies AB - Gothenburg</p>
-        </div>
+        <div style={{flex:1}}></div>
       </div>
+      <div style={{flex:2}} className="footer">
+          <p className="footer-text">© 2019 Takman Technologies AB - Gothenburg</p>
+        </div>
     </div>
   );
 }
