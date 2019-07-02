@@ -1,16 +1,46 @@
 import React from 'react';
-import logo from './takman_technologies_logo.svg';
+import logo from './icons/takman_technologies_logo.svg';
+import github from './icons/github-logo.svg';
+import linkedin from './icons/linkedin.svg';
+import twitter from './icons/twitter.svg';
+import email from './icons/email.svg';
+import phone from './icons/phone.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} />
-        <p>
-          
-        </p>
-      </header>
+    <div className="App" style={{flex:1}}>
+      <div style={{flex:6}}> <img src={logo}/></div>
+      <div style={{flex:6}} className="App-body">
+        <div style={{flex:2}}>
+          <a href="https://github.com/SimonTakman/">
+            <img src={github}/>
+          </a>
+        </div>
+        <div style={{flex:2}}>
+          <a href="https://linkedin.com/in/simontakman">
+            <img src={linkedin}/>
+          </a>
+        </div>
+        <div style={{flex:2}}>
+          <a href="https://twitter.com/simontakman">
+            <img src={twitter}/>
+          </a>
+        </div>
+        <div style={{flex:2}}>
+          <a href="mailto:simon@takmantechnologies.com">
+            <img src={email}/>
+          </a>
+        </div>
+        <div style={{flex:2}}>
+          <a href="tel:+46703253698">
+            <img src={phone}/>
+          </a>
+        </div>
+        <div style={{flex:2}}>
+          <p className="footer">© 2019 Takman Technologies AB - Gothenburg</p>
+        </div>
+      </div>
     </div>
   );
 }
