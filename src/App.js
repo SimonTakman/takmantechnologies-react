@@ -1,12 +1,14 @@
-import React from 'react';
-import logo from './icons/takman_technologies_logo.svg';
-import github from './icons/github-logo.svg';
-import linkedin from './icons/linkedin.svg';
-import twitter from './icons/twitter.svg';
-import email from './icons/email.svg';
-import phone from './icons/phone.svg';
-import './App.css';
+import React from "react";
+import logo from "./icons/takman_technologies_logo.svg";
+import github from "./icons/github-logo.svg";
+import linkedin from "./icons/linkedin.svg";
+import twitter from "./icons/twitter.svg";
+import email from "./icons/email.svg";
+import phone from "./icons/phone.svg";
+import Footer from "./components/footer/Footer";
+import "./App.css";
 
+/*
 function App() {
   return (
     <div className="App" style={{flex:1}}>
@@ -46,5 +48,17 @@ function App() {
     </div>
   );
 }
+*/
 
+function App() {
+  return (
+    <div className="App">
+      <div style={{ flex: 4, backgroundColor: "red" }} />
+      <div style={{ flex: 6, backgroundColor: "yellow" }} />
+      <div style={{ flex: 2 }}>
+        <Footer />
+      </div>
+    </div>
+  );
+}
 export default App;

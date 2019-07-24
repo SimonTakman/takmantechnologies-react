@@ -1,4 +1,4 @@
-
+/*
 body{
   background-color: #322834;
 }
@@ -59,4 +59,15 @@ body{
   align-items: flex-end;
   justify-content: flex-end;
   }
+}
+*/
+body {
+  background-color: #322834;
+}
+
+.App {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100vh;
 }
