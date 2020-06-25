@@ -12,3 +12,9 @@
   color: #6fc5bd;
   margin: 48px 0;
 }
+
+@media screen and (max-width: 600px) {
+  .footer-text {
+    margin: 24px 0;
+  }
+}
