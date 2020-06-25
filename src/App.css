@@ -66,8 +66,12 @@ body {
 }
 
 .App {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
+  display: grid;
   height: 100vh;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

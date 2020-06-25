@@ -7,6 +7,7 @@ import email from "./icons/email.svg";
 import phone from "./icons/phone.svg";
 import Footer from "./components/footer/Footer";
 import "./App.css";
+import IconGrid from "./components/iconGrid/IconGrid";
 
 /*
 function App() {
@@ -53,11 +54,11 @@ function App() {
 function App() {
   return (
     <div className="App">
-      <div style={{ flex: 4, backgroundColor: "red" }} />
-      <div style={{ flex: 6, backgroundColor: "yellow" }} />
-      <div style={{ flex: 2 }}>
-        <Footer />
+      <div className="logo">
+        <img src={logo} />
       </div>
+      <IconGrid />
+      <Footer />
     </div>
   );
 }
