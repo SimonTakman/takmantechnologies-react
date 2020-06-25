@@ -1,4 +1,4 @@
-
+/*
 body{
   background-color: #322834;
 }
@@ -59,4 +59,19 @@ body{
   align-items: flex-end;
   justify-content: flex-end;
   }
+}
+*/
+body {
+  background-color: #322834;
+}
+
+.App {
+  display: grid;
+  height: 100vh;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
