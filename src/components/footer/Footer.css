@@ -1,16 +1,14 @@
-.Footer {
+.footer {
   display: flex;
-  flex: 1;
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   height: 100%;
 }
 
-.footer-container {
-  align-self: center;
-  justify-content: center;
-}
-
 .footer-text {
+  display: flex;
   font-family: "Open Sans", sans-serif;
   color: #6fc5bd;
+  margin: 48px 0;
 }

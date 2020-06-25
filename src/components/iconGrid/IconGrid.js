@@ -10,18 +10,18 @@ export default function IconGrid() {
   return (
     <div className="IconGrid">
       <a href="https://github.com/SimonTakman/">
-        <img src={github} />
+        <img src={github} alt="github" />
       </a>
 
       <a href="https://linkedin.com/in/simontakman">
-        <img src={linkedin} />
+        <img src={linkedin} alt="linkedin" />
       </a>
       <a href="mailto:simon@takmantechnologies.com">
-        <img src={email} />
+        <img src={email} alt="takmantechnologies" />
       </a>
 
       <a href="tel:+46703253698">
-        <img src={phone} />
+        <img src={phone} alt="phone" />
       </a>
     </div>
   );
