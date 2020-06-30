@@ -14,8 +14,8 @@ export default function IconGrid() {
       <a href="https://linkedin.com/in/simontakman">
         <img src={linkedin} alt="linkedin" />
       </a>
-      <a href="mailto:simon@takmantechnologies.com">
-        <img src={email} alt="takmantechnologies" />
+      <a href="mailto:simon.takman@pelag.io">
+        <img src={email} alt="pelagio" />
       </a>
       <a href="tel:+46703253698">
         <img src={phone} alt="phone" />
