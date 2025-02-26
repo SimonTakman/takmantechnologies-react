@@ -1,0 +1,26 @@
+.video-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	z-index: -1;
+  }
+  
+  .video {
+	position: absolute;
+	object-fit: cover;
+	border-radius: 10px; /* Optional rounded corners */
+	opacity: 0.8; /* Adjust transparency */
+  }
+
+
+.title {
+	position: absolute;
+	font-size: 2rem;
+	color: white;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+	font-weight: bold;
+	transition: all 0.5s ease-in-out;
+  }
