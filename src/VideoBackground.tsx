@@ -4,6 +4,11 @@ import "./VideoBackground.css"; // Import styles
 
 const filters = ["grayscale(100%)", "sepia(70%)", "blur(5px)", "none"]; // Random filters
 
+const sendEmail = () => {
+  const email = atob("c2ltb24udGFrbWFuQHBlbGFnLmlv");
+  window.location.href = `mailto:${email}`;
+};
+
 const getRandom = (min, max) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
 
@@ -42,31 +47,46 @@ const VideoBackground = () => {
   }, []);
 
   return (
-    <div className="video-container">
-      {videos.map((video, index) => (
-        <video
-          key={index}
-          src={video.src}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="video"
+    <>
+      <div className="video-container">
+        {videos.map((video, index) => (
+          <video
+            key={index}
+            src={video.src}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="video"
+            style={{
+              top: video.top,
+              left: video.left,
+              width: video.width,
+              filter: video.filter,
+              zIndex: 1, // Ensures videos stay behind
+              pointerEvents: "none", // Stops videos from blocking clicks
+            }}
+          />
+        ))}
+
+        <h1
+          className="title"
           style={{
-            top: video.top,
-            left: video.left,
-            width: video.width,
-            filter: video.filter,
+            top: titlePosition.top,
+            left: titlePosition.left,
           }}
-        />
-      ))}
-      <h1
-        className="title"
-        style={{ top: titlePosition.top, left: titlePosition.left }}
-      >
-        Hi i'm Simon! 🚀
-      </h1>
-    </div>
+        >
+          👨‍💻🇸🇪
+        </h1>
+        <footer className="footer">
+          <a href="https://github.com/simontakman">GitHub</a>
+          <a href="https://www.linkedin.com/in/simontakman">LinkedIn</a>
+          <a href="#" onClick={sendEmail}>
+            Contact
+          </a>
+        </footer>
+      </div>
+    </>
   );
 };
 

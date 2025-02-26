@@ -5,22 +5,60 @@
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
-	z-index: -1;
+	z-index: 0; /* Set the base z-index */
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end; /* Pushes footer to bottom */
   }
   
   .video {
 	position: absolute;
 	object-fit: cover;
-	border-radius: 10px; /* Optional rounded corners */
-	opacity: 0.8; /* Adjust transparency */
+	border-radius: 10px;
+	opacity: 0.8;
+	z-index: 1; /* Ensures videos stay behind */
+	pointer-events: none; /* Makes sure videos do not block interactions */
   }
-
-
-.title {
+  
+  .title {
+	font-size: 5rem;
+	@media (max-width: 768px) {
+	  font-size: 3rem;
+	}
 	position: absolute;
-	font-size: 2rem;
 	color: white;
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 	font-weight: bold;
 	transition: all 0.5s ease-in-out;
+	z-index: 5;
+	margin-bottom: 5px;
   }
+
+  
+  /* Footer inside video-container */
+  .footer {
+	position: relative; /* Keeps it inside .video-container */
+	width: 100%;
+	background: rgba(0, 0, 0, 0.9); /* Darker background for contrast */
+	color: white;
+	text-align: center;
+	padding: 15px 0;
+	z-index: 10; /* Ensures it appears above videos */
+	pointer-events: auto; /* Ensures it's clickable */
+  }
+  
+  .footer a {
+	color: white;
+	margin: 0 20px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.2rem;
+	transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+	display: inline-block;
+  }
+  
+  .footer a:hover {
+	color: #f39c12;
+	transform: scale(1.1);
+  }
+  
