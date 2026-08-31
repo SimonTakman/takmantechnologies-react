@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <p className="footer-text">
-        © {year} Takman Technologies AB | 559206-8851
+        © {year} Takman Technologies AB | Org.nr 559206-8851
       </p>
     </div>
   );
